@@ -14,3 +14,5 @@ A simple, lightweight Bash script to monitor Linux server health. Checks CPU, me
 git clone https://github.com/yourusername/server-health-check.git
 cd server-health-check
 chmod +x server-health-check.sh
+
+
