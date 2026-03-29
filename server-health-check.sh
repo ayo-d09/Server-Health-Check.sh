@@ -28,15 +28,4 @@ df -h | awk 'NR==1 || $5+0 > 80 {print}'
 echo -e "\n5. Top 10 Memory-Consuming Processes:"
 ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head -n 11
 
-# Optional: Check specific services (uncomment and customize)
-# echo -e "\n6. Key Services Status:"
-# services=("ssh" "nginx" "apache2" "mysql")  # Add your services
-# for service in "${services[@]}"; do
-#     if systemctl is-active --quiet "$service"; then
-#         echo "$service: RUNNING"
-#     else
-#         echo "$service: STOPPED or FAILED"
-#     fi
-# done
-
 echo -e "\nHealth check complete!"
